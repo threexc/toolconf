@@ -20,6 +20,8 @@ set expandtab       " Expand TABs to spaces.
 " Automatically wrap text that extends beyond the screen length.
 set wrap
 
+" Automatically wrap lines with more than 80 characters
+set tw=80
 " Vim's auto indentation feature does not work properly with text copied
 " from outisde of Vim. Press the <F2> key to toggle paste mode on/off.
 nnoremap <F2> :set invpaste paste?<CR>
