@@ -1,0 +1,145 @@
+/home/tgamblin/.vim
+├── autoload
+│   └── pathogen.vim
+└── bundle
+    ├── badwolf
+    │   ├── colors
+    │   │   ├── badwolf.vim
+    │   │   └── goodwolf.vim
+    │   ├── contrib
+    │   │   ├── badwolf.dircolors
+    │   │   ├── badwolf.dvtcolortheme
+    │   │   ├── badwolf.muttrc
+    │   │   └── badwolf-theme.el
+    │   ├── LICENSE.markdown
+    │   ├── package.sh
+    │   └── README.markdown
+    ├── black_is_the_color
+    │   ├── colors
+    │   │   └── black_is_the_color.vim
+    │   └── README.md
+    ├── nerdtree
+    │   ├── autoload
+    │   │   ├── nerdtree
+    │   │   │   └── ui_glue.vim
+    │   │   └── nerdtree.vim
+    │   ├── CHANGELOG.md
+    │   ├── _config.yml
+    │   ├── doc
+    │   │   ├── NERDTree.txt
+    │   │   └── tags
+    │   ├── lib
+    │   │   └── nerdtree
+    │   │       ├── bookmark.vim
+    │   │       ├── creator.vim
+    │   │       ├── event.vim
+    │   │       ├── flag_set.vim
+    │   │       ├── key_map.vim
+    │   │       ├── menu_controller.vim
+    │   │       ├── menu_item.vim
+    │   │       ├── nerdtree.vim
+    │   │       ├── notifier.vim
+    │   │       ├── opener.vim
+    │   │       ├── path.vim
+    │   │       ├── tree_dir_node.vim
+    │   │       ├── tree_file_node.vim
+    │   │       └── ui.vim
+    │   ├── LICENCE
+    │   ├── nerdtree_plugin
+    │   │   ├── exec_menuitem.vim
+    │   │   ├── fs_menu.vim
+    │   │   └── vcs.vim
+    │   ├── plugin
+    │   │   └── NERD_tree.vim
+    │   ├── README.markdown
+    │   ├── screenshot.png
+    │   ├── syntax
+    │   │   └── nerdtree.vim
+    │   └── tags
+    ├── oceannight
+    │   ├── colors
+    │   │   └── oceannight.vim
+    │   ├── LICENSE
+    │   └── README.md
+    ├── quantum
+    │   ├── autoload
+    │   │   └── lightline
+    │   │       └── colorscheme
+    │   │           └── quantum.vim
+    │   ├── colors
+    │   │   └── quantum.vim
+    │   ├── gedit
+    │   │   ├── quantum-dark.xml
+    │   │   └── quantum-light.xml
+    │   ├── img
+    │   │   └── preview.png
+    │   ├── LICENSE
+    │   ├── README.md
+    │   └── term
+    │       ├── quantum-dark.kitty
+    │       ├── quantum-dark.termite
+    │       ├── quantum-dark.Xresources
+    │       ├── quantum-light.kitty
+    │       ├── quantum-light.termite
+    │       └── quantum-light.Xresources
+    ├── sensible
+    │   ├── plugin
+    │   │   └── sensible.vim
+    │   └── README.markdown
+    ├── vim-fugitive
+    │   ├── autoload
+    │   │   └── fugitive.vim
+    │   ├── CONTRIBUTING.markdown
+    │   ├── doc
+    │   │   └── fugitive.txt
+    │   ├── ftdetect
+    │   │   └── fugitive.vim
+    │   ├── plugin
+    │   │   └── fugitive.vim
+    │   ├── README.markdown
+    │   └── syntax
+    │       ├── fugitiveblame.vim
+    │       └── fugitive.vim
+    ├── vim-gitgutter
+    │   ├── autoload
+    │   │   ├── gitgutter
+    │   │   │   ├── async.vim
+    │   │   │   ├── debug.vim
+    │   │   │   ├── diff_highlight.vim
+    │   │   │   ├── diff.vim
+    │   │   │   ├── fold.vim
+    │   │   │   ├── highlight.vim
+    │   │   │   ├── hunk.vim
+    │   │   │   ├── sign.vim
+    │   │   │   └── utility.vim
+    │   │   └── gitgutter.vim
+    │   ├── doc
+    │   │   └── gitgutter.txt
+    │   ├── LICENCE
+    │   ├── plugin
+    │   │   └── gitgutter.vim
+    │   ├── README.mkd
+    │   ├── screenshot.png
+    │   ├── test
+    │   │   ├── cp932.txt
+    │   │   ├── fixture_dos.txt
+    │   │   ├── fixture.txt
+    │   │   ├── runner.vim
+    │   │   ├── test
+    │   │   └── test_gitgutter.vim
+    │   └── unplace.vim
+    └── vim-reddit
+        ├── ftplugin
+        │   └── reddit.vim
+        ├── LICENSE
+        ├── plugin
+        │   ├── __pycache__
+        │   │   └── vimreddit.cpython-37.pyc
+        │   ├── reddit.vim
+        │   └── vimreddit.py
+        ├── README.md
+        ├── syntax
+        │   └── reddit.vim
+        └── vim-reddit-home.png
+
+45 directories, 97 files
