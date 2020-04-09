@@ -45,3 +45,7 @@ statin () {
 glg () {
     git log --grep="$1"
 }
+
+gli () {
+    (cd $1 && git log)
+}
