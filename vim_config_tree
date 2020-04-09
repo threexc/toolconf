@@ -86,6 +86,153 @@
     │   ├── plugin
     │   │   └── sensible.vim
     │   └── README.markdown
+    ├── tmuxline.vim
+    │   ├── autoload
+    │   │   ├── tmuxline
+    │   │   │   ├── api.vim
+    │   │   │   ├── builder.vim
+    │   │   │   ├── command_completion.vim
+    │   │   │   ├── presets
+    │   │   │   │   ├── crosshair.vim
+    │   │   │   │   ├── full.vim
+    │   │   │   │   ├── minimal.vim
+    │   │   │   │   ├── nightly_fox.vim
+    │   │   │   │   ├── powerline.vim
+    │   │   │   │   ├── righteous.vim
+    │   │   │   │   └── tmux.vim
+    │   │   │   ├── themes
+    │   │   │   │   ├── airline_insert.vim
+    │   │   │   │   ├── airline.vim
+    │   │   │   │   ├── airline_visual.vim
+    │   │   │   │   ├── iceberg.vim
+    │   │   │   │   ├── jellybeans.vim
+    │   │   │   │   ├── lightline_insert.vim
+    │   │   │   │   ├── lightline.vim
+    │   │   │   │   ├── lightline_visual.vim
+    │   │   │   │   ├── nightly_fox.vim
+    │   │   │   │   ├── powerline.vim
+    │   │   │   │   ├── vim_powerline.vim
+    │   │   │   │   ├── vim_statusline_1.vim
+    │   │   │   │   ├── vim_statusline_2.vim
+    │   │   │   │   ├── vim_statusline_3.vim
+    │   │   │   │   └── zenburn.vim
+    │   │   │   └── util.vim
+    │   │   └── tmuxline.vim
+    │   ├── CONTRIBUTORS.md
+    │   ├── doc
+    │   │   └── tmuxline.txt
+    │   ├── LICENSE
+    │   ├── plugin
+    │   │   └── tmuxline.vim
+    │   └── README.md
+    ├── vim-airline
+    │   ├── autoload
+    │   │   ├── airline
+    │   │   │   ├── async.vim
+    │   │   │   ├── builder.vim
+    │   │   │   ├── debug.vim
+    │   │   │   ├── extensions
+    │   │   │   │   ├── ale.vim
+    │   │   │   │   ├── bookmark.vim
+    │   │   │   │   ├── branch.vim
+    │   │   │   │   ├── bufferline.vim
+    │   │   │   │   ├── capslock.vim
+    │   │   │   │   ├── coc.vim
+    │   │   │   │   ├── commandt.vim
+    │   │   │   │   ├── csv.vim
+    │   │   │   │   ├── ctrlp.vim
+    │   │   │   │   ├── ctrlspace.vim
+    │   │   │   │   ├── cursormode.vim
+    │   │   │   │   ├── default.vim
+    │   │   │   │   ├── denite.vim
+    │   │   │   │   ├── eclim.vim
+    │   │   │   │   ├── example.vim
+    │   │   │   │   ├── fugitiveline.vim
+    │   │   │   │   ├── gina.vim
+    │   │   │   │   ├── grepper.vim
+    │   │   │   │   ├── gutentags.vim
+    │   │   │   │   ├── hunks.vim
+    │   │   │   │   ├── keymap.vim
+    │   │   │   │   ├── languageclient.vim
+    │   │   │   │   ├── localsearch.vim
+    │   │   │   │   ├── lsp.vim
+    │   │   │   │   ├── neomake.vim
+    │   │   │   │   ├── netrw.vim
+    │   │   │   │   ├── nrrwrgn.vim
+    │   │   │   │   ├── obsession.vim
+    │   │   │   │   ├── poetv.vim
+    │   │   │   │   ├── po.vim
+    │   │   │   │   ├── promptline.vim
+    │   │   │   │   ├── quickfix.vim
+    │   │   │   │   ├── syntastic.vim
+    │   │   │   │   ├── tabline
+    │   │   │   │   │   ├── autoshow.vim
+    │   │   │   │   │   ├── buffers.vim
+    │   │   │   │   │   ├── buflist.vim
+    │   │   │   │   │   ├── builder.vim
+    │   │   │   │   │   ├── ctrlspace.vim
+    │   │   │   │   │   ├── formatters
+    │   │   │   │   │   │   ├── default.vim
+    │   │   │   │   │   │   ├── jsformatter.vim
+    │   │   │   │   │   │   ├── short_path.vim
+    │   │   │   │   │   │   ├── tabnr.vim
+    │   │   │   │   │   │   ├── unique_tail_improved.vim
+    │   │   │   │   │   │   └── unique_tail.vim
+    │   │   │   │   │   ├── tabs.vim
+    │   │   │   │   │   ├── tabws.vim
+    │   │   │   │   │   └── xtabline.vim
+    │   │   │   │   ├── tabline.vim
+    │   │   │   │   ├── tagbar.vim
+    │   │   │   │   ├── term.vim
+    │   │   │   │   ├── tmuxline.vim
+    │   │   │   │   ├── undotree.vim
+    │   │   │   │   ├── unicode.vim
+    │   │   │   │   ├── unite.vim
+    │   │   │   │   ├── vimagit.vim
+    │   │   │   │   ├── vimtex.vim
+    │   │   │   │   ├── virtualenv.vim
+    │   │   │   │   ├── vista.vim
+    │   │   │   │   ├── whitespace.vim
+    │   │   │   │   ├── windowswap.vim
+    │   │   │   │   ├── wordcount
+    │   │   │   │   │   └── formatters
+    │   │   │   │   │       └── default.vim
+    │   │   │   │   ├── wordcount.vim
+    │   │   │   │   ├── xkblayout.vim
+    │   │   │   │   └── ycm.vim
+    │   │   │   ├── extensions.vim
+    │   │   │   ├── highlighter.vim
+    │   │   │   ├── init.vim
+    │   │   │   ├── msdos.vim
+    │   │   │   ├── parts.vim
+    │   │   │   ├── section.vim
+    │   │   │   ├── themes
+    │   │   │   │   └── dark.vim
+    │   │   │   ├── themes.vim
+    │   │   │   └── util.vim
+    │   │   └── airline.vim
+    │   ├── CHANGELOG.md
+    │   ├── CONTRIBUTING.md
+    │   ├── doc
+    │   │   └── airline.txt
+    │   ├── Gemfile
+    │   ├── LICENSE
+    │   ├── plugin
+    │   │   └── airline.vim
+    │   ├── Rakefile
+    │   ├── README.md
+    │   └── t
+    │       ├── airline.vim
+    │       ├── builder.vim
+    │       ├── commands.vim
+    │       ├── extensions_default.vim
+    │       ├── extensions_tabline.vim
+    │       ├── highlighter.vim
+    │       ├── init.vim
+    │       ├── parts.vim
+    │       ├── section.vim
+    │       ├── themes.vim
+    │       └── util.vim
     ├── vim-fugitive
     │   ├── autoload
     │   │   └── fugitive.vim
@@ -142,4 +289,4 @@
         │   └── reddit.vim
         └── vim-reddit-home.png
 
-45 directories, 97 files
+64 directories, 225 files
