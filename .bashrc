@@ -54,11 +54,11 @@ gli () {
 # Yocto development, plus some preferred editors and libraries for
 # modeling.
 getmytools () {
-    sudo dnf install gawk make wget tar bzip2 gzip python3 unzip perl patch \
+    sudo dnf install -y gawk make wget tar bzip2 gzip python3 unzip perl patch \
     diffutils diffstat git cpp gcc gcc-c++ glibc-devel texinfo chrpath \
     ccache perl-Data-Dumper perl-Text-ParseWords perl-Thread-Queue perl-bignum socat \
-    python3-pexpect findutils which file cpio python python3-pip xz SDL-devel xterm \ 
-    tmux vim htop rpcgen python3-numpy python3-matplotlib
+    python3-pexpect findutils which file cpio python python3-pip xz SDL-devel xterm \
+    tmux vim htop rpcgen python3-numpy python3-matplotlib ffmpeg
 }
 
 # Get the .bashrc and .vimrc files into the home directory, install vim
