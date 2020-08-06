@@ -10,6 +10,7 @@ if has("autocmd")
 	autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
 endif
 
+set pastetoggle=<F2> " add hotkey for changing to paste mode to avoid extra indentation
 set updatetime=100 " reduce time between updates from 4000 to 100
 set textwidth=72 " set wrap width to 72
 set tabstop=4 
