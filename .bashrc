@@ -58,7 +58,7 @@ getmytools () {
     diffutils diffstat git cpp gcc gcc-c++ glibc-devel texinfo chrpath \
     ccache perl-Data-Dumper perl-Text-ParseWords perl-Thread-Queue perl-bignum socat \
     python3-pexpect findutils which file cpio python python3-pip xz SDL-devel xterm \
-    tmux vim htop rpcgen python3-numpy python3-matplotlib ffmpeg
+    tmux vim htop rpcgen python3-numpy python3-matplotlib ffmpeg python3-scipy
 }
 
 # Get the .bashrc and .vimrc files into the home directory, install vim
