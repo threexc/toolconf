@@ -30,6 +30,6 @@ so that the network pods run
 svc tekton-dashboard -n tekton-pipelines`), search for a line that says
 `type: ClusterIP` and change it to say `type: NodePort`, then save and
 check the status of the service. It should now have a port in the 30000+
-range that you can access using <IP>:<PORT> in your browser from
+range that you can access using `<IP>:<PORT>` in your browser from
 machines on the same network as the node.
 
