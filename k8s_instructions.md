@@ -7,6 +7,8 @@
 - Docker, or a similar containerization tool (may need additional
   configuration)
 
+### Instructions
+
 1. Turn off swap: `sudo swapoff -a`
 2. Follow the instructions to install kubeadm, kubectl, and kubelet from
    the Kubernetes [documentation](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
