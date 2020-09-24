@@ -25,4 +25,11 @@ so that the network pods run
 10. Install Tekton Triggers: `kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml`
 11. Install Tekton Dashboard: `kubectl apply --filename https://github.com/tektoncd/dashboard/releases/latest/download/tekton-dashboard-release.yaml`
 12. (Recommended) Get the Tekton CLI: `https://tekton.dev/docs/cli/`
+13. For quickly making deployed services accessible remotely, do
+    `kubectl edit svc <servicename> -n <namespace>` (e.g. `kubectl edit
+svc tekton-dashboard -n tekton-pipelines`), search for a line that says
+`type: ClusterIP` and change it to say `type: NodePort`, then save and
+check the status of the service. It should now have a port in the 30000+
+range that you can access using <IP>:<PORT> in your browser from
+machines on the same network as the node.
 
