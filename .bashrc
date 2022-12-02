@@ -63,15 +63,6 @@ getmytools () {
     tmux vim htop rpcgen python3-numpy python3-matplotlib ffmpeg python3-scipy
 }
 
-# Get the .bashrc and .vimrc files into the home directory, install vim
-# addons. Overwrites the existing configs.
-setupmyvim () {
-    cp devtoolconfig/.bashrc .
-    cp devtoolconfig/.vimrc .
-    bash devtoolconfig/vim_setup.sh
-    rm -rf devtoolconfig
-}
-
 # Get key layers for Yocto development, plus some other useful ones
 setupyp () {
     git clone git://git.openembedded.org/openembedded-core
