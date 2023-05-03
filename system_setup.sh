@@ -4,7 +4,8 @@ set -x
 sudo dnf -y update
 sudo dnf -y groupinstall "Development Tools"
 sudo dnf install -y cinnamon vim-enhanced dwarves tmux dfu-util kernel-headers htop git \
-    golang iproute-tc ninja-build cmake gcc-c++ libuuid-devel nasm acpica-tools
+    golang iproute-tc ninja-build cmake gcc-c++ libuuid-devel nasm acpica-tools flex \
+    bison openssl-devel elfutils-devel gdb
 mkdir -p ~/git
 cd ~/git/
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
