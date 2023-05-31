@@ -6,7 +6,7 @@ sudo dnf -y groupinstall "Development Tools"
 sudo dnf install -y cinnamon vim-enhanced dwarves tmux dfu-util kernel-headers htop git \
     golang iproute-tc ninja-build cmake gcc-c++ libuuid-devel nasm acpica-tools flex \
     bison openssl-devel elfutils-devel gdb b4 cmake capnproto capnproto-devel sqlite-devel \
-    boost boost-devel rapidjson-devel
+    boost boost-devel rapidjson-devel chrpath lz4 zstd rpcgen git-email
 mkdir -p ~/git
 cd ~/git/
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
