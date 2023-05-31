@@ -3,13 +3,17 @@ set -x
 
 sudo dnf -y update
 sudo dnf -y groupinstall "Development Tools"
-sudo dnf install -y cinnamon vim-enhanced dwarves tmux dfu-util kernel-headers htop git \
-    golang iproute-tc ninja-build cmake gcc-c++ libuuid-devel nasm acpica-tools flex \
-    bison openssl-devel elfutils-devel gdb b4 cmake capnproto capnproto-devel sqlite-devel \
-    boost boost-devel rapidjson-devel chrpath lz4 zstd rpcgen git-email
-mkdir -p ~/git
-cd ~/git/
-git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+sudo dnf install -y acpica-tools b4 bison boost boost-devel bzip2 capnproto \
+    capnproto-devel ccache chrpath cinnamon cmake cpio cpp dfu-util diffutils \
+    diffstat dwarves elfutils-devel file findutils flex git git-email gawk \
+    gcc gcc-c++ gdb glibc-devel glibc-langpack-en golang gzip hostname htop \
+    iproute-tc kernel-headers lz4 libuuid-devel make mesa-libGL-devel \
+    ninja-build nasm openssl-devel patch perl perl-bignum perl-Data-Dumper \
+    perl-FindBin perl-File-Compare perl-File-Copy perl-locale \
+    perl-Text-ParseWords perl-Thread-Queue python3 python3-GitPython \
+    python3-jinja2 python3-pexpect python3-pip rapidjson-devel rpcgen \
+    SDL-devel sqlite-devel socat tar texinfo tmux unzip vim-enhanced \
+    wget which xz zstd
 
 set +x
 read -p "Set hostname? " yn
