@@ -16,7 +16,7 @@ sudo dnf install -y acpica-tools b4 bison boost boost-devel bzip2 \
     perl-Text-ParseWords perl-Thread-Queue pixman-devel \
     python3 python3-GitPython python3-jinja2 python3-pexpect \
     python3-pip rapidjson-devel rpcgen SDL-devel sqlite-devel \
-    socat tar texinfo thunderbird tmux unzip vim-enhanced wget \
+    socat swig tar texinfo thunderbird tmux unzip vim-enhanced wget \
     which xz zstd
 
 set +x
