@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install pathogen
-mkdir -p ~/.vim/autoload ~/.vim/bundle
+mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/after/ftplugin
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # clone vim-airline unless it already exists
@@ -25,3 +25,4 @@ if [ ! -d "$HOME/.vim/bundle/vim-gitgutter" ]; then
 fi
 
 cp .vimrc ~/.vimrc
+cp python.vim ~/.vim/after/ftplugin/python.vim
