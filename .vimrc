@@ -16,6 +16,8 @@ set visualbell " don't beep
 if has("autocmd")
 	" Use actual tab chars in Makefiles
 	autocmd FileType make set tabstop=8 shiftwidth=8 softtabstop=0 noexpandtab
+	autocmd FileType python set expandtab shiftwidth=4 softtabstop=4
+	autocmd FileType rust set expandtab shiftwidth=4 softtabstop=4
 endif
 
 let g:airline_powerline_fonts = 1
