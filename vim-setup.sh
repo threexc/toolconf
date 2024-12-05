@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install pathogen
-mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/after/ftplugin
+mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # clone vim-airline unless it already exists
@@ -24,5 +24,9 @@ if [ ! -d "$HOME/.vim/bundle/vim-gitgutter" ]; then
     git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
 fi
 
+# clone rust-vim unless it already exists
+if [ ! -d "$HOME/.vim/bundle/rust-vim" ]; then
+    git clone --depth=1 https://github.com/rust-lang/rust.vim.git ~/.vim/bundle/rust.vim
+fi
+
 cp .vimrc ~/.vimrc
-cp python.vim ~/.vim/after/ftplugin/python.vim
