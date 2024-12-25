@@ -1,32 +1,37 @@
 #!/bin/bash
 
-# install pathogen
-mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+setup_pathogen() {
+	echo "Setting up ~/.vim/autoload and ~/.vim/bundle (if not already present)..."
+	mkdir -p ~/.vim/autoload ~/.vim/bundle
+	echo "Getting pathogen (if not already present)..."
+	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+}
 
-# clone vim-airline unless it already exists
-if [ ! -d "$HOME/.vim/bundle/vim-airline" ]; then
-    git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
-fi
+setup_plugins() {
+	repos=(
+	    https://github.com/bling/vim-airline
+	    https://tpope.io/vim/fugitive
+	    https://github.com/preservim/nerdtree
+	    https://github.com/airblade/vim-gitgutter
+	    https://github.com/rust-lang/rust.vim
+	)
+	BUNDLE_PATH="$HOME/.vim/bundle"
 
-# clone fugitive unless it already exists
-if [ ! -d "$HOME/.vim/bundle/vim-fugitive" ]; then
-    git clone https://tpope.io/vim/fugitive.git ~/.vim/bundle/vim-fugitive
-fi
+	for i in "${repos[@]}"; do
+		PATHNAME="${BUNDLE_PATH}/${i##*/}"
+		if [ ! -d "${PATHNAME}" ]; then
+			git clone "$i" "$PATHNAME"
+		else
+			echo "\"${PATHNAME}\" already present, updating..."
+			(cd "${PATHNAME}" && git pull)
+		fi
+	done
+}
 
-# clone nerdtree unless it already exists
-if [ ! -d "$HOME/.vim/bundle/nerdtree" ]; then
-    git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
-fi
+setup_vim() {
+	setup_pathogen
+	setup_plugins
+	cp .vimrc ~/.vimrc
+}
 
-# clone vim-gitgutter unless it already exists
-if [ ! -d "$HOME/.vim/bundle/vim-gitgutter" ]; then
-    git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
-fi
-
-# clone rust-vim unless it already exists
-if [ ! -d "$HOME/.vim/bundle/rust-vim" ]; then
-    git clone --depth=1 https://github.com/rust-lang/rust.vim.git ~/.vim/bundle/rust.vim
-fi
-
-cp .vimrc ~/.vimrc
+setup_vim
